@@ -1,0 +1,59 @@
+('C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS PASCAL\\UBP\\,,\\TC\\Calculadora '
+ 'kevin\\build\\convertidor\\convertidor.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True},
+ [('PYZ-00.pyz',
+   'C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS '
+   'PASCAL\\UBP\\,,\\TC\\Calculadora kevin\\build\\convertidor\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS '
+   'PASCAL\\UBP\\,,\\TC\\Calculadora '
+   'kevin\\build\\convertidor\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS '
+   'PASCAL\\UBP\\,,\\TC\\Calculadora '
+   'kevin\\build\\convertidor\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS '
+   'PASCAL\\UBP\\,,\\TC\\Calculadora '
+   'kevin\\build\\convertidor\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS '
+   'PASCAL\\UBP\\,,\\TC\\Calculadora '
+   'kevin\\build\\convertidor\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS '
+   'PASCAL\\UBP\\,,\\TC\\Calculadora '
+   'kevin\\build\\convertidor\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\Gsu\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\Gsu\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\Users\\Gsu\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('convertidor',
+   'C:\\Users\\Gsu\\OneDrive - UNIVERSIDAD BLAS '
+   'PASCAL\\UBP\\,,\\TC\\Calculadora kevin\\convertidor.py',
+   'PYSOURCE')],
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
