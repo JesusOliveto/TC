@@ -36,7 +36,7 @@
             "name": "Launch App",
             "request": "launch",
             "mainClass": "compiladores.App",
-            "projectName": "compiladores"
+            "projectName": "proyectobase"
         }
     ]
 }

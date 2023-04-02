@@ -11,12 +11,11 @@
   <name>proyectobase</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
-
   <!-- Utilizar version 11 o mayor -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>19</maven.compiler.source>
+    <maven.compiler.target>19</maven.compiler.target>
   </properties>
 
   <dependencies>
