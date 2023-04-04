@@ -1,4 +1,4 @@
-// Generated from c:\Users\frang\OneDrive\Escritorio\Facu\5to\TC\Repos\TC\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
+// Generated from primerproyecto.g4 by ANTLR 4.12.0
 
 package primerproyecto;
 
@@ -11,15 +11,15 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class primerproyectoParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.12.0", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		FECHAPAR=1, FECHA=2, HORA813=3, HORA183213=4, HORA=5, OTRO=6;
+		NUMERO=1, OTRO=2, ID=3;
 	public static final int
 		RULE_s = 0;
 	private static String[] makeRuleNames() {
@@ -36,7 +36,7 @@ public class primerproyectoParser extends Parser {
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "FECHAPAR", "FECHA", "HORA813", "HORA183213", "HORA", "OTRO"
+			null, "NUMERO", "OTRO", "ID"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -90,20 +90,16 @@ public class primerproyectoParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class SContext extends ParserRuleContext {
-		public Token FECHAPAR;
-		public Token FECHA;
-		public Token HORA813;
-		public Token HORA183213;
-		public Token HORA;
-		public TerminalNode FECHAPAR() { return getToken(primerproyectoParser.FECHAPAR, 0); }
+		public Token ID;
+		public Token NUMERO;
+		public Token OTRO;
+		public TerminalNode ID() { return getToken(primerproyectoParser.ID, 0); }
 		public SContext s() {
 			return getRuleContext(SContext.class,0);
 		}
-		public TerminalNode FECHA() { return getToken(primerproyectoParser.FECHA, 0); }
-		public TerminalNode HORA813() { return getToken(primerproyectoParser.HORA813, 0); }
-		public TerminalNode HORA183213() { return getToken(primerproyectoParser.HORA183213, 0); }
-		public TerminalNode HORA() { return getToken(primerproyectoParser.HORA, 0); }
+		public TerminalNode NUMERO() { return getToken(primerproyectoParser.NUMERO, 0); }
 		public TerminalNode OTRO() { return getToken(primerproyectoParser.OTRO, 0); }
 		public TerminalNode EOF() { return getToken(primerproyectoParser.EOF, 0); }
 		public SContext(ParserRuleContext parent, int invokingState) {
@@ -118,84 +114,49 @@ public class primerproyectoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof primerproyectoListener ) ((primerproyectoListener)listener).exitS(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof primerproyectoVisitor ) return ((primerproyectoVisitor<? extends T>)visitor).visitS(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final SContext s() throws RecognitionException {
 		SContext _localctx = new SContext(_ctx, getState());
 		enterRule(_localctx, 0, RULE_s);
 		try {
-			setState(21);
+			setState(12);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case FECHAPAR:
+			case ID:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(2);
-				((SContext)_localctx).FECHAPAR = match(FECHAPAR);
-				 System.out.println("Linea : " + ((SContext)_localctx).FECHAPAR.getLine() + " - Fecha con mes PAR ->" + ((SContext)_localctx).FECHAPAR.getText() + "<-"); 
+				((SContext)_localctx).ID = match(ID);
+				 System.out.println("ID ->" + ((SContext)_localctx).ID.getText() + "<--"); 
 				setState(4);
 				s();
 				}
 				break;
-			case FECHA:
+			case NUMERO:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(5);
-				((SContext)_localctx).FECHA = match(FECHA);
-				 System.out.println("Linea : " + ((SContext)_localctx).FECHA.getLine() + " - Fecha ->" + ((SContext)_localctx).FECHA.getText() + "<-"); 
+				((SContext)_localctx).NUMERO = match(NUMERO);
+				 System.out.println("NUMERO ->" + ((SContext)_localctx).NUMERO.getText() + "<--"); 
 				setState(7);
 				s();
 				}
 				break;
-			case HORA813:
+			case OTRO:
 				enterOuterAlt(_localctx, 3);
 				{
 				setState(8);
-				((SContext)_localctx).HORA813 = match(HORA813);
-				 System.out.println("Linea : " + ((SContext)_localctx).HORA813.getLine() + " - Hora 8 a 13 ->" + ((SContext)_localctx).HORA813.getText() + "<-"); 
+				((SContext)_localctx).OTRO = match(OTRO);
+				 System.out.println("Otro ->" + ((SContext)_localctx).OTRO.getText() + "<--"); 
 				setState(10);
 				s();
 				}
 				break;
-			case HORA183213:
+			case EOF:
 				enterOuterAlt(_localctx, 4);
 				{
 				setState(11);
-				((SContext)_localctx).HORA183213 = match(HORA183213);
-				 System.out.println("Linea : " + ((SContext)_localctx).HORA183213.getLine() + " - Hora 18:30 a 21:30 ->" + ((SContext)_localctx).HORA183213.getText() + "<-"); 
-				setState(13);
-				s();
-				}
-				break;
-			case HORA:
-				enterOuterAlt(_localctx, 5);
-				{
-				setState(14);
-				((SContext)_localctx).HORA = match(HORA);
-				 System.out.println("Linea : " + ((SContext)_localctx).HORA.getLine() + " - Hora ->" + ((SContext)_localctx).HORA.getText() + "<-"); 
-				setState(16);
-				s();
-				}
-				break;
-			case OTRO:
-				enterOuterAlt(_localctx, 6);
-				{
-				setState(17);
-				match(OTRO);
-				 System.out.println(""); 
-				setState(19);
-				s();
-				}
-				break;
-			case EOF:
-				enterOuterAlt(_localctx, 7);
-				{
-				setState(20);
 				match(EOF);
 				}
 				break;
@@ -215,14 +176,17 @@ public class primerproyectoParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\b\32\4\2\t\2\3\2"+
-		"\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3"+
-		"\2\5\2\30\n\2\3\2\2\2\3\2\2\2\2\36\2\27\3\2\2\2\4\5\7\3\2\2\5\6\b\2\1"+
-		"\2\6\30\5\2\2\2\7\b\7\4\2\2\b\t\b\2\1\2\t\30\5\2\2\2\n\13\7\5\2\2\13\f"+
-		"\b\2\1\2\f\30\5\2\2\2\r\16\7\6\2\2\16\17\b\2\1\2\17\30\5\2\2\2\20\21\7"+
-		"\7\2\2\21\22\b\2\1\2\22\30\5\2\2\2\23\24\7\b\2\2\24\25\b\2\1\2\25\30\5"+
-		"\2\2\2\26\30\7\2\2\3\27\4\3\2\2\2\27\7\3\2\2\2\27\n\3\2\2\2\27\r\3\2\2"+
-		"\2\27\20\3\2\2\2\27\23\3\2\2\2\27\26\3\2\2\2\30\3\3\2\2\2\3\27";
+		"\u0004\u0001\u0003\u000f\u0002\u0000\u0007\u0000\u0001\u0000\u0001\u0000"+
+		"\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000"+
+		"\u0001\u0000\u0001\u0000\u0003\u0000\r\b\u0000\u0001\u0000\u0000\u0000"+
+		"\u0001\u0000\u0000\u0000\u0010\u0000\f\u0001\u0000\u0000\u0000\u0002\u0003"+
+		"\u0005\u0003\u0000\u0000\u0003\u0004\u0006\u0000\uffff\uffff\u0000\u0004"+
+		"\r\u0003\u0000\u0000\u0000\u0005\u0006\u0005\u0001\u0000\u0000\u0006\u0007"+
+		"\u0006\u0000\uffff\uffff\u0000\u0007\r\u0003\u0000\u0000\u0000\b\t\u0005"+
+		"\u0002\u0000\u0000\t\n\u0006\u0000\uffff\uffff\u0000\n\r\u0003\u0000\u0000"+
+		"\u0000\u000b\r\u0005\u0000\u0000\u0001\f\u0002\u0001\u0000\u0000\u0000"+
+		"\f\u0005\u0001\u0000\u0000\u0000\f\b\u0001\u0000\u0000\u0000\f\u000b\u0001"+
+		"\u0000\u0000\u0000\r\u0001\u0001\u0000\u0000\u0000\u0001\f";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

@@ -1,4 +1,4 @@
-// Generated from c:\Users\frang\OneDrive\Escritorio\Facu\5to\TC\Repos\TC\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
+// Generated from primerproyecto.g4 by ANTLR 4.12.0
 
 package primerproyecto;
 
