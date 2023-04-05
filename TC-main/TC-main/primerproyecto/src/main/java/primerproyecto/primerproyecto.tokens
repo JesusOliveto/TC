@@ -1,3 +1,7 @@
-NUMERO=1
-OTRO=2
-ID=3
+PA=1
+PC=2
+NUMERO=3
+OTRO=4
+ID=5
+'('=1
+')'=2

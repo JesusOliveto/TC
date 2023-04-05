@@ -1,42 +1,51 @@
-// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
-
-package primerproyecto;
-
+// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\prueba\test\src\main\java\ejercicio\ejercicio.g4 by ANTLR 4.9.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link primerproyectoListener},
+ * This class provides an empty implementation of {@link ejercicioListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class primerproyectoBaseListener implements primerproyectoListener {
+public class ejercicioBaseListener implements ejercicioListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSi(primerproyectoParser.SiContext ctx) { }
+	@Override public void enterFecha_pares(ejercicioParser.Fecha_paresContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSi(primerproyectoParser.SiContext ctx) { }
+	@Override public void exitFecha_pares(ejercicioParser.Fecha_paresContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterS(primerproyectoParser.SContext ctx) { }
+	@Override public void enterHora_manana(ejercicioParser.Hora_mananaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitS(primerproyectoParser.SContext ctx) { }
+	@Override public void exitHora_manana(ejercicioParser.Hora_mananaContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterHora_noche(ejercicioParser.Hora_nocheContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitHora_noche(ejercicioParser.Hora_nocheContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -1,4 +1,4 @@
-// Generated from primerproyecto.g4 by ANTLR 4.12.0
+// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
 
 package primerproyecto;
 
@@ -11,32 +11,33 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class primerproyectoParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.12.0", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		NUMERO=1, OTRO=2, ID=3;
+		PA=1, PC=2, NUMERO=3, OTRO=4, ID=5;
 	public static final int
-		RULE_s = 0;
+		RULE_si = 0, RULE_s = 1;
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"s"
+			"si", "s"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
+			null, "'('", "')'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "NUMERO", "OTRO", "ID"
+			null, "PA", "PC", "NUMERO", "OTRO", "ID"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -90,18 +91,73 @@ public class primerproyectoParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
-	@SuppressWarnings("CheckReturnValue")
-	public static class SContext extends ParserRuleContext {
-		public Token ID;
-		public Token NUMERO;
-		public Token OTRO;
-		public TerminalNode ID() { return getToken(primerproyectoParser.ID, 0); }
+	public static class SiContext extends ParserRuleContext {
 		public SContext s() {
 			return getRuleContext(SContext.class,0);
 		}
-		public TerminalNode NUMERO() { return getToken(primerproyectoParser.NUMERO, 0); }
-		public TerminalNode OTRO() { return getToken(primerproyectoParser.OTRO, 0); }
 		public TerminalNode EOF() { return getToken(primerproyectoParser.EOF, 0); }
+		public SiContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_si; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof primerproyectoListener ) ((primerproyectoListener)listener).enterSi(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof primerproyectoListener ) ((primerproyectoListener)listener).exitSi(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof primerproyectoVisitor ) return ((primerproyectoVisitor<? extends T>)visitor).visitSi(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+
+	public final SiContext si() throws RecognitionException {
+		SiContext _localctx = new SiContext(_ctx, getState());
+		enterRule(_localctx, 0, RULE_si);
+		try {
+			setState(6);
+			_errHandler.sync(this);
+			switch ( getInterpreter().adaptivePredict(_input,0,_ctx) ) {
+			case 1:
+				enterOuterAlt(_localctx, 1);
+				{
+				setState(4);
+				s();
+				}
+				break;
+			case 2:
+				enterOuterAlt(_localctx, 2);
+				{
+				setState(5);
+				match(EOF);
+				}
+				break;
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class SContext extends ParserRuleContext {
+		public TerminalNode PA() { return getToken(primerproyectoParser.PA, 0); }
+		public List<SContext> s() {
+			return getRuleContexts(SContext.class);
+		}
+		public SContext s(int i) {
+			return getRuleContext(SContext.class,i);
+		}
+		public TerminalNode PC() { return getToken(primerproyectoParser.PC, 0); }
 		public SContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -114,50 +170,37 @@ public class primerproyectoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof primerproyectoListener ) ((primerproyectoListener)listener).exitS(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof primerproyectoVisitor ) return ((primerproyectoVisitor<? extends T>)visitor).visitS(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final SContext s() throws RecognitionException {
 		SContext _localctx = new SContext(_ctx, getState());
-		enterRule(_localctx, 0, RULE_s);
+		enterRule(_localctx, 2, RULE_s);
 		try {
-			setState(12);
+			setState(14);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case ID:
+			case PA:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(2);
-				((SContext)_localctx).ID = match(ID);
-				 System.out.println("ID ->" + ((SContext)_localctx).ID.getText() + "<--"); 
-				setState(4);
-				s();
-				}
-				break;
-			case NUMERO:
-				enterOuterAlt(_localctx, 2);
-				{
-				setState(5);
-				((SContext)_localctx).NUMERO = match(NUMERO);
-				 System.out.println("NUMERO ->" + ((SContext)_localctx).NUMERO.getText() + "<--"); 
-				setState(7);
-				s();
-				}
-				break;
-			case OTRO:
-				enterOuterAlt(_localctx, 3);
-				{
 				setState(8);
-				((SContext)_localctx).OTRO = match(OTRO);
-				 System.out.println("Otro ->" + ((SContext)_localctx).OTRO.getText() + "<--"); 
+				match(PA);
+				setState(9);
+				s();
 				setState(10);
+				match(PC);
+				setState(11);
 				s();
 				}
 				break;
 			case EOF:
-				enterOuterAlt(_localctx, 4);
+			case PC:
+				enterOuterAlt(_localctx, 2);
 				{
-				setState(11);
-				match(EOF);
 				}
 				break;
 			default:
@@ -176,17 +219,12 @@ public class primerproyectoParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0003\u000f\u0002\u0000\u0007\u0000\u0001\u0000\u0001\u0000"+
-		"\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000"+
-		"\u0001\u0000\u0001\u0000\u0003\u0000\r\b\u0000\u0001\u0000\u0000\u0000"+
-		"\u0001\u0000\u0000\u0000\u0010\u0000\f\u0001\u0000\u0000\u0000\u0002\u0003"+
-		"\u0005\u0003\u0000\u0000\u0003\u0004\u0006\u0000\uffff\uffff\u0000\u0004"+
-		"\r\u0003\u0000\u0000\u0000\u0005\u0006\u0005\u0001\u0000\u0000\u0006\u0007"+
-		"\u0006\u0000\uffff\uffff\u0000\u0007\r\u0003\u0000\u0000\u0000\b\t\u0005"+
-		"\u0002\u0000\u0000\t\n\u0006\u0000\uffff\uffff\u0000\n\r\u0003\u0000\u0000"+
-		"\u0000\u000b\r\u0005\u0000\u0000\u0001\f\u0002\u0001\u0000\u0000\u0000"+
-		"\f\u0005\u0001\u0000\u0000\u0000\f\b\u0001\u0000\u0000\u0000\f\u000b\u0001"+
-		"\u0000\u0000\u0000\r\u0001\u0001\u0000\u0000\u0000\u0001\f";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\7\23\4\2\t\2\4\3"+
+		"\t\3\3\2\3\2\5\2\t\n\2\3\3\3\3\3\3\3\3\3\3\3\3\5\3\21\n\3\3\3\2\2\4\2"+
+		"\4\2\2\2\22\2\b\3\2\2\2\4\20\3\2\2\2\6\t\5\4\3\2\7\t\7\2\2\3\b\6\3\2\2"+
+		"\2\b\7\3\2\2\2\t\3\3\2\2\2\n\13\7\3\2\2\13\f\5\4\3\2\f\r\7\4\2\2\r\16"+
+		"\5\4\3\2\16\21\3\2\2\2\17\21\3\2\2\2\20\n\3\2\2\2\20\17\3\2\2\2\21\5\3"+
+		"\2\2\2\4\b\20";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

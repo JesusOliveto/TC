@@ -1,4 +1,4 @@
-// Generated from c:\Users\frang\OneDrive\Escritorio\Facu\5to\TC\Repos\TC\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
+// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
 
 package primerproyecto;
 
@@ -12,6 +12,12 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  * operations with no return type.
  */
 public interface primerproyectoVisitor<T> extends ParseTreeVisitor<T> {
+	/**
+	 * Visit a parse tree produced by {@link primerproyectoParser#si}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSi(primerproyectoParser.SiContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link primerproyectoParser#s}.
 	 * @param ctx the parse tree

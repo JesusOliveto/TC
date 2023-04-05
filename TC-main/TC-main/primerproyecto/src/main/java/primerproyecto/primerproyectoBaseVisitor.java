@@ -1,4 +1,4 @@
-// Generated from c:\Users\frang\OneDrive\Escritorio\Facu\5to\TC\Repos\TC\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
+// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
 
 package primerproyecto;
 
@@ -13,6 +13,13 @@ import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
  * operations with no return type.
  */
 public class primerproyectoBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements primerproyectoVisitor<T> {
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitSi(primerproyectoParser.SiContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

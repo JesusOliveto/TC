@@ -1,4 +1,4 @@
-// Generated from primerproyecto.g4 by ANTLR 4.12.0
+// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
 
 package primerproyecto;
 
@@ -11,15 +11,15 @@ import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class primerproyectoLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.12.0", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		NUMERO=1, OTRO=2, ID=3;
+		PA=1, PC=2, NUMERO=3, OTRO=4, ID=5;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
 	};
@@ -30,19 +30,20 @@ public class primerproyectoLexer extends Lexer {
 
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"LETRA", "DIGITO", "NUMERO", "OTRO", "ID"
+			"LETRA", "DIGITO", "PA", "PC", "NUMERO", "OTRO", "ID"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
+			null, "'('", "')'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "NUMERO", "OTRO", "ID"
+			null, "PA", "PC", "NUMERO", "OTRO", "ID"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -104,31 +105,18 @@ public class primerproyectoLexer extends Lexer {
 	public ATN getATN() { return _ATN; }
 
 	public static final String _serializedATN =
-		"\u0004\u0000\u0003!\u0006\uffff\uffff\u0002\u0000\u0007\u0000\u0002\u0001"+
-		"\u0007\u0001\u0002\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004"+
-		"\u0007\u0004\u0001\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0002"+
-		"\u0004\u0002\u0011\b\u0002\u000b\u0002\f\u0002\u0012\u0001\u0003\u0001"+
-		"\u0003\u0001\u0004\u0001\u0004\u0003\u0004\u0019\b\u0004\u0001\u0004\u0001"+
-		"\u0004\u0001\u0004\u0004\u0004\u001e\b\u0004\u000b\u0004\f\u0004\u001f"+
-		"\u0000\u0000\u0005\u0001\u0000\u0003\u0000\u0005\u0001\u0007\u0002\t\u0003"+
-		"\u0001\u0000\u0002\u0002\u0000AZaz\u0001\u000009#\u0000\u0005\u0001\u0000"+
-		"\u0000\u0000\u0000\u0007\u0001\u0000\u0000\u0000\u0000\t\u0001\u0000\u0000"+
-		"\u0000\u0001\u000b\u0001\u0000\u0000\u0000\u0003\r\u0001\u0000\u0000\u0000"+
-		"\u0005\u0010\u0001\u0000\u0000\u0000\u0007\u0014\u0001\u0000\u0000\u0000"+
-		"\t\u0018\u0001\u0000\u0000\u0000\u000b\f\u0007\u0000\u0000\u0000\f\u0002"+
-		"\u0001\u0000\u0000\u0000\r\u000e\u0007\u0001\u0000\u0000\u000e\u0004\u0001"+
-		"\u0000\u0000\u0000\u000f\u0011\u0003\u0003\u0001\u0000\u0010\u000f\u0001"+
-		"\u0000\u0000\u0000\u0011\u0012\u0001\u0000\u0000\u0000\u0012\u0010\u0001"+
-		"\u0000\u0000\u0000\u0012\u0013\u0001\u0000\u0000\u0000\u0013\u0006\u0001"+
-		"\u0000\u0000\u0000\u0014\u0015\t\u0000\u0000\u0000\u0015\b\u0001\u0000"+
-		"\u0000\u0000\u0016\u0019\u0003\u0001\u0000\u0000\u0017\u0019\u0005_\u0000"+
-		"\u0000\u0018\u0016\u0001\u0000\u0000\u0000\u0018\u0017\u0001\u0000\u0000"+
-		"\u0000\u0019\u001d\u0001\u0000\u0000\u0000\u001a\u001e\u0003\u0001\u0000"+
-		"\u0000\u001b\u001e\u0003\u0003\u0001\u0000\u001c\u001e\u0005_\u0000\u0000"+
-		"\u001d\u001a\u0001\u0000\u0000\u0000\u001d\u001b\u0001\u0000\u0000\u0000"+
-		"\u001d\u001c\u0001\u0000\u0000\u0000\u001e\u001f\u0001\u0000\u0000\u0000"+
-		"\u001f\u001d\u0001\u0000\u0000\u0000\u001f \u0001\u0000\u0000\u0000 \n"+
-		"\u0001\u0000\u0000\u0000\u0005\u0000\u0012\u0018\u001d\u001f\u0000";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\2\7+\b\1\4\2\t\2\4"+
+		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\3\2\3\2\3\3\3\3\3\4\3\4"+
+		"\3\5\3\5\3\6\6\6\33\n\6\r\6\16\6\34\3\7\3\7\3\b\3\b\5\b#\n\b\3\b\3\b\3"+
+		"\b\6\b(\n\b\r\b\16\b)\2\2\t\3\2\5\2\7\3\t\4\13\5\r\6\17\7\3\2\4\4\2C\\"+
+		"c|\3\2\62;\2-\2\7\3\2\2\2\2\t\3\2\2\2\2\13\3\2\2\2\2\r\3\2\2\2\2\17\3"+
+		"\2\2\2\3\21\3\2\2\2\5\23\3\2\2\2\7\25\3\2\2\2\t\27\3\2\2\2\13\32\3\2\2"+
+		"\2\r\36\3\2\2\2\17\"\3\2\2\2\21\22\t\2\2\2\22\4\3\2\2\2\23\24\t\3\2\2"+
+		"\24\6\3\2\2\2\25\26\7*\2\2\26\b\3\2\2\2\27\30\7+\2\2\30\n\3\2\2\2\31\33"+
+		"\5\5\3\2\32\31\3\2\2\2\33\34\3\2\2\2\34\32\3\2\2\2\34\35\3\2\2\2\35\f"+
+		"\3\2\2\2\36\37\13\2\2\2\37\16\3\2\2\2 #\5\3\2\2!#\7a\2\2\" \3\2\2\2\""+
+		"!\3\2\2\2#\'\3\2\2\2$(\5\3\2\2%(\5\5\3\2&(\7a\2\2\'$\3\2\2\2\'%\3\2\2"+
+		"\2\'&\3\2\2\2()\3\2\2\2)\'\3\2\2\2)*\3\2\2\2*\20\3\2\2\2\7\2\34\"\')\2";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

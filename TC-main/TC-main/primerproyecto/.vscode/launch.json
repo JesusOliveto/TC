@@ -2,6 +2,7 @@
     "version": "1",
     "configurations": [
         {
+   
             "name": "Debug ANTLR4 grammar",
             "type": "antlr-debug",
             "request": "launch",
@@ -10,17 +11,10 @@
             // Archivo a parsear
             "input": "input/entrada.txt",
             // Simbolo inicial
-            "startRule": "s",
+            "startRule": "si",
             // Muestra Arbol Sintactico
             "printParseTree": true,
             "visualParseTree": true
-        },
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
