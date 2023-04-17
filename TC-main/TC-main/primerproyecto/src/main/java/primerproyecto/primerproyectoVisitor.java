@@ -13,15 +13,39 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface primerproyectoVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link primerproyectoParser#si}.
+	 * Visit a parse tree produced by {@link primerproyectoParser#programa}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSi(primerproyectoParser.SiContext ctx);
+	T visitPrograma(primerproyectoParser.ProgramaContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link primerproyectoParser#s}.
+	 * Visit a parse tree produced by {@link primerproyectoParser#instrucciones}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitS(primerproyectoParser.SContext ctx);
+	T visitInstrucciones(primerproyectoParser.InstruccionesContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link primerproyectoParser#instruccion}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInstruccion(primerproyectoParser.InstruccionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link primerproyectoParser#asignacion}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAsignacion(primerproyectoParser.AsignacionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link primerproyectoParser#declaracion}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeclaracion(primerproyectoParser.DeclaracionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link primerproyectoParser#inicializacion}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInicializacion(primerproyectoParser.InicializacionContext ctx);
 }

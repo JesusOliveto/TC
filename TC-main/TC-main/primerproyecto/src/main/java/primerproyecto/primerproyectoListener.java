@@ -10,23 +10,63 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface primerproyectoListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link primerproyectoParser#si}.
+	 * Enter a parse tree produced by {@link primerproyectoParser#programa}.
 	 * @param ctx the parse tree
 	 */
-	void enterSi(primerproyectoParser.SiContext ctx);
+	void enterPrograma(primerproyectoParser.ProgramaContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link primerproyectoParser#si}.
+	 * Exit a parse tree produced by {@link primerproyectoParser#programa}.
 	 * @param ctx the parse tree
 	 */
-	void exitSi(primerproyectoParser.SiContext ctx);
+	void exitPrograma(primerproyectoParser.ProgramaContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link primerproyectoParser#s}.
+	 * Enter a parse tree produced by {@link primerproyectoParser#instrucciones}.
 	 * @param ctx the parse tree
 	 */
-	void enterS(primerproyectoParser.SContext ctx);
+	void enterInstrucciones(primerproyectoParser.InstruccionesContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link primerproyectoParser#s}.
+	 * Exit a parse tree produced by {@link primerproyectoParser#instrucciones}.
 	 * @param ctx the parse tree
 	 */
-	void exitS(primerproyectoParser.SContext ctx);
+	void exitInstrucciones(primerproyectoParser.InstruccionesContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link primerproyectoParser#instruccion}.
+	 * @param ctx the parse tree
+	 */
+	void enterInstruccion(primerproyectoParser.InstruccionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link primerproyectoParser#instruccion}.
+	 * @param ctx the parse tree
+	 */
+	void exitInstruccion(primerproyectoParser.InstruccionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link primerproyectoParser#asignacion}.
+	 * @param ctx the parse tree
+	 */
+	void enterAsignacion(primerproyectoParser.AsignacionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link primerproyectoParser#asignacion}.
+	 * @param ctx the parse tree
+	 */
+	void exitAsignacion(primerproyectoParser.AsignacionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link primerproyectoParser#declaracion}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclaracion(primerproyectoParser.DeclaracionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link primerproyectoParser#declaracion}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclaracion(primerproyectoParser.DeclaracionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link primerproyectoParser#inicializacion}.
+	 * @param ctx the parse tree
+	 */
+	void enterInicializacion(primerproyectoParser.InicializacionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link primerproyectoParser#inicializacion}.
+	 * @param ctx the parse tree
+	 */
+	void exitInicializacion(primerproyectoParser.InicializacionContext ctx);
 }
