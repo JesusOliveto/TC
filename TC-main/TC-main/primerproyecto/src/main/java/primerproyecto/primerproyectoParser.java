@@ -1,4 +1,4 @@
-// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
+// Generated from c:/Users/Gsu/OneDrive - UNIVERSIDAD BLAS PASCAL/UBP/,,/TC/TC-main/TC-main/primerproyecto/src/main/java/primerproyecto/primerproyecto.g4 by ANTLR 4.13.1
 
 package primerproyecto;
 
@@ -11,9 +11,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class primerproyectoParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -95,6 +95,7 @@ public class primerproyectoParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ProgramaContext extends ParserRuleContext {
 		public InstruccionesContext instrucciones() {
 			return getRuleContext(InstruccionesContext.class,0);
@@ -142,6 +143,7 @@ public class primerproyectoParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class InstruccionesContext extends ParserRuleContext {
 		public InstruccionContext instruccion() {
 			return getRuleContext(InstruccionContext.class,0);
@@ -204,6 +206,7 @@ public class primerproyectoParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class InstruccionContext extends ParserRuleContext {
 		public AsignacionContext asignacion() {
 			return getRuleContext(AsignacionContext.class,0);
@@ -248,6 +251,7 @@ public class primerproyectoParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class AsignacionContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(primerproyectoParser.ID, 0); }
 		public TerminalNode ASING() { return getToken(primerproyectoParser.ASING, 0); }
@@ -299,6 +303,7 @@ public class primerproyectoParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class DeclaracionContext extends ParserRuleContext {
 		public TerminalNode INT() { return getToken(primerproyectoParser.INT, 0); }
 		public TerminalNode ID() { return getToken(primerproyectoParser.ID, 0); }
@@ -352,6 +357,7 @@ public class primerproyectoParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class InicializacionContext extends ParserRuleContext {
 		public TerminalNode ASING() { return getToken(primerproyectoParser.ASING, 0); }
 		public TerminalNode NUMERO() { return getToken(primerproyectoParser.NUMERO, 0); }
@@ -411,16 +417,30 @@ public class primerproyectoParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\r)\4\2\t\2\4\3\t"+
-		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\3\2\3\2\3\2\3\3\3\3\3\3\3\3\5\3\26"+
-		"\n\3\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\7\3\7\3\7\5\7\'"+
-		"\n\7\3\7\2\2\b\2\4\6\b\n\f\2\2\2$\2\16\3\2\2\2\4\25\3\2\2\2\6\27\3\2\2"+
-		"\2\b\31\3\2\2\2\n\36\3\2\2\2\f&\3\2\2\2\16\17\5\4\3\2\17\20\7\2\2\3\20"+
-		"\3\3\2\2\2\21\22\5\6\4\2\22\23\5\4\3\2\23\26\3\2\2\2\24\26\3\2\2\2\25"+
-		"\21\3\2\2\2\25\24\3\2\2\2\26\5\3\2\2\2\27\30\5\b\5\2\30\7\3\2\2\2\31\32"+
-		"\7\f\2\2\32\33\7\b\2\2\33\34\7\13\2\2\34\35\7\3\2\2\35\t\3\2\2\2\36\37"+
-		"\7\n\2\2\37 \7\f\2\2 !\5\f\7\2!\"\7\3\2\2\"\13\3\2\2\2#$\7\b\2\2$\'\7"+
-		"\13\2\2%\'\3\2\2\2&#\3\2\2\2&%\3\2\2\2\'\r\3\2\2\2\4\25&";
+		"\u0004\u0001\u000b\'\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
+		"\u0005\u0007\u0005\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0003\u0001\u0014\b\u0001\u0001\u0002\u0001"+
+		"\u0002\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001"+
+		"\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0005\u0001"+
+		"\u0005\u0001\u0005\u0003\u0005%\b\u0005\u0001\u0005\u0000\u0000\u0006"+
+		"\u0000\u0002\u0004\u0006\b\n\u0000\u0000\"\u0000\f\u0001\u0000\u0000\u0000"+
+		"\u0002\u0013\u0001\u0000\u0000\u0000\u0004\u0015\u0001\u0000\u0000\u0000"+
+		"\u0006\u0017\u0001\u0000\u0000\u0000\b\u001c\u0001\u0000\u0000\u0000\n"+
+		"$\u0001\u0000\u0000\u0000\f\r\u0003\u0002\u0001\u0000\r\u000e\u0005\u0000"+
+		"\u0000\u0001\u000e\u0001\u0001\u0000\u0000\u0000\u000f\u0010\u0003\u0004"+
+		"\u0002\u0000\u0010\u0011\u0003\u0002\u0001\u0000\u0011\u0014\u0001\u0000"+
+		"\u0000\u0000\u0012\u0014\u0001\u0000\u0000\u0000\u0013\u000f\u0001\u0000"+
+		"\u0000\u0000\u0013\u0012\u0001\u0000\u0000\u0000\u0014\u0003\u0001\u0000"+
+		"\u0000\u0000\u0015\u0016\u0003\u0006\u0003\u0000\u0016\u0005\u0001\u0000"+
+		"\u0000\u0000\u0017\u0018\u0005\n\u0000\u0000\u0018\u0019\u0005\u0006\u0000"+
+		"\u0000\u0019\u001a\u0005\t\u0000\u0000\u001a\u001b\u0005\u0001\u0000\u0000"+
+		"\u001b\u0007\u0001\u0000\u0000\u0000\u001c\u001d\u0005\b\u0000\u0000\u001d"+
+		"\u001e\u0005\n\u0000\u0000\u001e\u001f\u0003\n\u0005\u0000\u001f \u0005"+
+		"\u0001\u0000\u0000 \t\u0001\u0000\u0000\u0000!\"\u0005\u0006\u0000\u0000"+
+		"\"%\u0005\t\u0000\u0000#%\u0001\u0000\u0000\u0000$!\u0001\u0000\u0000"+
+		"\u0000$#\u0001\u0000\u0000\u0000%\u000b\u0001\u0000\u0000\u0000\u0002"+
+		"\u0013$";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

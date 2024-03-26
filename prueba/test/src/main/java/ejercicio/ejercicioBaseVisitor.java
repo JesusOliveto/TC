@@ -1,4 +1,4 @@
-// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\prueba\test\src\main\java\ejercicio\ejercicio.g4 by ANTLR 4.9.2
+// Generated from c:/Users/Gsu/OneDrive - UNIVERSIDAD BLAS PASCAL/UBP/,,/TC/prueba/test/src/main/java/ejercicio/ejercicio.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -9,6 +9,7 @@ import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
  * @param <T> The return type of the visit operation. Use {@link Void} for
  * operations with no return type.
  */
+@SuppressWarnings("CheckReturnValue")
 public class ejercicioBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements ejercicioVisitor<T> {
 	/**
 	 * {@inheritDoc}

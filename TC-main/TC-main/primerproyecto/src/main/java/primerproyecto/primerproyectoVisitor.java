@@ -1,4 +1,4 @@
-// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
+// Generated from c:/Users/Gsu/OneDrive - UNIVERSIDAD BLAS PASCAL/UBP/,,/TC/TC-main/TC-main/primerproyecto/src/main/java/primerproyecto/primerproyecto.g4 by ANTLR 4.13.1
 
 package primerproyecto;
 

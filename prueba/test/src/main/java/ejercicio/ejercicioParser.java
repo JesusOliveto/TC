@@ -1,4 +1,4 @@
-// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\prueba\test\src\main\java\ejercicio\ejercicio.g4 by ANTLR 4.9.2
+// Generated from c:/Users/Gsu/OneDrive - UNIVERSIDAD BLAS PASCAL/UBP/,,/TC/prueba/test/src/main/java/ejercicio/ejercicio.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class ejercicioParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -92,6 +92,7 @@ public class ejercicioParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class Fecha_paresContext extends ParserRuleContext {
 		public List<TerminalNode> DIGIT() { return getTokens(ejercicioParser.DIGIT); }
 		public TerminalNode DIGIT(int i) {
@@ -131,7 +132,7 @@ public class ejercicioParser extends Parser {
 			match(T__0);
 			setState(9);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__1) | (1L << T__2) | (1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 252L) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -162,6 +163,7 @@ public class ejercicioParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class Hora_mananaContext extends ParserRuleContext {
 		public List<TerminalNode> DIGIT() { return getTokens(ejercicioParser.DIGIT); }
 		public TerminalNode DIGIT(int i) {
@@ -282,6 +284,7 @@ public class ejercicioParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class Hora_nocheContext extends ParserRuleContext {
 		public TerminalNode DIGIT() { return getToken(ejercicioParser.DIGIT, 0); }
 		public Hora_nocheContext(ParserRuleContext parent, int invokingState) {
@@ -312,7 +315,7 @@ public class ejercicioParser extends Parser {
 			{
 			setState(37);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 122880L) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -364,20 +367,38 @@ public class ejercicioParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\25\62\4\2\t\2\4\3"+
-		"\t\3\4\4\t\4\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3"+
-		"\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\5\3$\n\3\5\3&\n\3\3"+
-		"\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\5\4\60\n\4\3\4\2\2\5\2\4\6\2\4\3\2\4\t"+
-		"\3\2\17\22\2\66\2\b\3\2\2\2\4%\3\2\2\2\6\'\3\2\2\2\b\t\7\24\2\2\t\n\7"+
-		"\24\2\2\n\13\7\3\2\2\13\f\t\2\2\2\f\r\7\3\2\2\r\16\7\24\2\2\16\17\7\24"+
-		"\2\2\17\20\7\24\2\2\20\21\7\24\2\2\21\3\3\2\2\2\22&\7\7\2\2\23&\7\n\2"+
-		"\2\24\25\7\13\2\2\25\26\7\24\2\2\26\27\7\f\2\2\27\30\7\24\2\2\30&\7\24"+
-		"\2\2\31\32\7\t\2\2\32#\7\f\2\2\33\34\7\r\2\2\34$\7\24\2\2\35\36\7\13\2"+
-		"\2\36$\7\r\2\2\37 \7\13\2\2 $\7\13\2\2!\"\7\13\2\2\"$\7\16\2\2#\33\3\2"+
-		"\2\2#\35\3\2\2\2#\37\3\2\2\2#!\3\2\2\2$&\3\2\2\2%\22\3\2\2\2%\23\3\2\2"+
-		"\2%\24\3\2\2\2%\31\3\2\2\2&\5\3\2\2\2\'(\t\3\2\2(/\7\f\2\2)*\7\23\2\2"+
-		"*\60\7\r\2\2+,\7\23\2\2,\60\7\13\2\2-.\7\r\2\2.\60\7\24\2\2/)\3\2\2\2"+
-		"/+\3\2\2\2/-\3\2\2\2\60\7\3\2\2\2\5#%/";
+		"\u0004\u0001\u00130\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0002\u0007\u0002\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001"+
+		"\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0003\u0001\"\b"+
+		"\u0001\u0003\u0001$\b\u0001\u0001\u0002\u0001\u0002\u0001\u0002\u0001"+
+		"\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0003\u0002.\b"+
+		"\u0002\u0001\u0002\u0000\u0000\u0003\u0000\u0002\u0004\u0000\u0002\u0001"+
+		"\u0000\u0002\u0007\u0001\u0000\r\u00104\u0000\u0006\u0001\u0000\u0000"+
+		"\u0000\u0002#\u0001\u0000\u0000\u0000\u0004%\u0001\u0000\u0000\u0000\u0006"+
+		"\u0007\u0005\u0012\u0000\u0000\u0007\b\u0005\u0012\u0000\u0000\b\t\u0005"+
+		"\u0001\u0000\u0000\t\n\u0007\u0000\u0000\u0000\n\u000b\u0005\u0001\u0000"+
+		"\u0000\u000b\f\u0005\u0012\u0000\u0000\f\r\u0005\u0012\u0000\u0000\r\u000e"+
+		"\u0005\u0012\u0000\u0000\u000e\u000f\u0005\u0012\u0000\u0000\u000f\u0001"+
+		"\u0001\u0000\u0000\u0000\u0010$\u0005\u0005\u0000\u0000\u0011$\u0005\b"+
+		"\u0000\u0000\u0012\u0013\u0005\t\u0000\u0000\u0013\u0014\u0005\u0012\u0000"+
+		"\u0000\u0014\u0015\u0005\n\u0000\u0000\u0015\u0016\u0005\u0012\u0000\u0000"+
+		"\u0016$\u0005\u0012\u0000\u0000\u0017\u0018\u0005\u0007\u0000\u0000\u0018"+
+		"!\u0005\n\u0000\u0000\u0019\u001a\u0005\u000b\u0000\u0000\u001a\"\u0005"+
+		"\u0012\u0000\u0000\u001b\u001c\u0005\t\u0000\u0000\u001c\"\u0005\u000b"+
+		"\u0000\u0000\u001d\u001e\u0005\t\u0000\u0000\u001e\"\u0005\t\u0000\u0000"+
+		"\u001f \u0005\t\u0000\u0000 \"\u0005\f\u0000\u0000!\u0019\u0001\u0000"+
+		"\u0000\u0000!\u001b\u0001\u0000\u0000\u0000!\u001d\u0001\u0000\u0000\u0000"+
+		"!\u001f\u0001\u0000\u0000\u0000\"$\u0001\u0000\u0000\u0000#\u0010\u0001"+
+		"\u0000\u0000\u0000#\u0011\u0001\u0000\u0000\u0000#\u0012\u0001\u0000\u0000"+
+		"\u0000#\u0017\u0001\u0000\u0000\u0000$\u0003\u0001\u0000\u0000\u0000%"+
+		"&\u0007\u0001\u0000\u0000&-\u0005\n\u0000\u0000\'(\u0005\u0011\u0000\u0000"+
+		"(.\u0005\u000b\u0000\u0000)*\u0005\u0011\u0000\u0000*.\u0005\t\u0000\u0000"+
+		"+,\u0005\u000b\u0000\u0000,.\u0005\u0012\u0000\u0000-\'\u0001\u0000\u0000"+
+		"\u0000-)\u0001\u0000\u0000\u0000-+\u0001\u0000\u0000\u0000.\u0005\u0001"+
+		"\u0000\u0000\u0000\u0003!#-";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

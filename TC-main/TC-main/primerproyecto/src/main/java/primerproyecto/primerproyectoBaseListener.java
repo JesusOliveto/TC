@@ -1,4 +1,4 @@
-// Generated from c:\Users\Gsu\OneDrive - UNIVERSIDAD BLAS PASCAL\UBP\,,\TC\TC-main\TC-main\primerproyecto\src\main\java\primerproyecto\primerproyecto.g4 by ANTLR 4.9.2
+// Generated from c:/Users/Gsu/OneDrive - UNIVERSIDAD BLAS PASCAL/UBP/,,/TC/TC-main/TC-main/primerproyecto/src/main/java/primerproyecto/primerproyecto.g4 by ANTLR 4.13.1
 
 package primerproyecto;
 
@@ -12,6 +12,7 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
+@SuppressWarnings("CheckReturnValue")
 public class primerproyectoBaseListener implements primerproyectoListener {
 	/**
 	 * {@inheritDoc}
